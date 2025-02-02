@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 import { TypeAnimation } from "react-type-animation"
 
 const rotatingPhrases = [
-  "Digital Banking Support Engineer",
+  "Banking Support Engineer",
   "Electronics Sub-Engineer",
   "Client Service Expert",
   "Tech Enthusiast",
