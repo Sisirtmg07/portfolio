@@ -30,28 +30,23 @@ export default function AboutSection() {
             initial={{ opacity: 0, x: isMobile ? 0 : -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: isMobile ? 0.3 : 0.5, delay: isMobile ? 0 : 0.2 }}
-            className="md:w-1/2 mb-8 md:mb-0 relative group will-change-transform"
+            className="relative group will-change-transform flex justify-center md:justify-start"
             style={{ transform: "translateZ(0)" }} // Enables GPU acceleration
           >
-            <div className="relative mx-auto w-auto h-auto max-w-[300px] max-h-[300px] sm:max-w-[250px] sm:max-h-[250px]">
+            <div className="relative w-full max-w-[200px] md:max-w-[250px] lg:max-w-[300px] aspect-square">
               <Image
                 src="/images/profile.jpg"
                 alt="Sisir Tamang"
-                width={300}
-                height={300}
-                loading="lazy"
-                className="rounded-full object-cover shadow-2xl group-hover:scale-105 transition-transform duration-300 ease-out"
-                sizes="(max-width: 768px) 80vw, (max-width: 1024px) 40vw, 300px"
+                layout="fill"
+                className="rounded-full object-cover shadow-2xl border-4 border-blue-500"
               />
-              {/* Decorative ring */}
-              <div className="absolute -inset-4 border-2 border-blue-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-spin-slow" />
             </div>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, x: isMobile ? 0 : 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: isMobile ? 0.3 : 0.5, delay: isMobile ? 0 : 0.3 }}
-            className="md:w-1/2 space-y-6 text-lg will-change-transform"
+            className="w-full md:w-1/2 space-y-4 md:space-y-6"
             style={{ transform: "translateZ(0)" }} // Enables GPU acceleration
           >
             <p className="text-gray-600 dark:text-gray-300">
